@@ -5,11 +5,12 @@ import fetch from "node-fetch";
 // config
 const path = "./data";
 const scrapes = [
-  ["kitchen", 10],
-  ["road", 10],
-  ["person", 10],
-  ["car", 10],
-  ["forest", 10],
+  ["cooking", 70],
+  ["city road side", 70],
+  ["person photo", 30],
+  ["unlit candle", 50],
+  ["car on road", 70],
+  ["forest", 20],
 ];
 
 if (!fs.existsSync(path)) fs.mkdirSync(path);
