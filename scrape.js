@@ -14,10 +14,16 @@ const scrapes = [
 ];
 
 if (!fs.existsSync(path)) fs.mkdirSync(path);
-const scraperConfig = { puppeteer: { headless: true } };
 
-let sum = scrapes.reduce((part, scrape) => part + scrape[1], 0);
-let count = 0;
+// find the biggest file and start counting from it
+const files = fs.readdirSync(path);
+const filesCounts = files.map((file) => Number(file.replace(".jpg", "")));
+const fileLast = Math.max(...filesCounts);
+let count = fileLast;
+let sum = scrapes.reduce((part, scrape) => part + scrape[1], 0) + count;
+console.log(count);
+
+const scraperConfig = { puppeteer: { headless: true } };
 
 scrapes.forEach(async (scrape) => {
   let results;

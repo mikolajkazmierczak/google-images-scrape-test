@@ -3,7 +3,7 @@
   "type": "module",
   "main": "scrape.js",
   "scripts": {
-    "scrap": "node ./scrape.js",
+    "scrape": "node ./scrape.js",
     "resize": "node ./resize.js"
   },
   "dependencies": {
