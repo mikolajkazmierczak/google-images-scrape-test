@@ -1,0 +1,15 @@
+{
+  "name": "google-images-scrape-test",
+  "type": "module",
+  "main": "scrap.js",
+  "scripts": {
+    "scrap": "node ./scrap.js",
+    "resize": "node ./resize.js"
+  },
+  "dependencies": {
+    "imagemagick": "^0.1.3",
+    "images-scraper": "^6.4.0",
+    "node-fetch": "^3.1.0"
+  },
+  "devDependencies": {}
+}
