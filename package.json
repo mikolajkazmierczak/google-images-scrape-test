@@ -1,9 +1,9 @@
 {
   "name": "google-images-scrape-test",
   "type": "module",
-  "main": "scrap.js",
+  "main": "scrape.js",
   "scripts": {
-    "scrap": "node ./scrap.js",
+    "scrap": "node ./scrape.js",
     "resize": "node ./resize.js"
   },
   "dependencies": {
