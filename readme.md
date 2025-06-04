@@ -1,11 +1,22 @@
 # Google Images Scrape Test
 
-This project is meant for educational purposes only.\
-You **DO NOT** have the rights to any of the images acquired with it!
+This project is for educational purposes only :)
 
 # Running
 
-- scrape: `npm run scrape`\
-  Wait for _Finished!_ message.
-- resize: `npm run resize`\
-  You need [imagemagick](https://imagemagick.org/script/download.php) installed for resizing!
+## Scraping
+
+Configure variables in `scrape.js`:
+- `path` is the images output folder,
+- `scrapes` is a list of tuples of the query and the amount to download.
+
+`npm run scrape`
+
+## Resizing
+
+
+**Note:** You need [imagemagick](https://imagemagick.org/script/download.php) installed for resizing!
+
+Configure variable `width` in `resize.js` to the amount of pixels.
+
+`npm run resize`
