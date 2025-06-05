@@ -1,6 +1,8 @@
 # Google Images Scrape Test
 
-This project is for educational purposes only :)
+This project is for educational purposes only, as it was used for a course on machine learning.
+
+It's a simple script with definable set of queries and corresponding quantites of how many resulting images to scrape from Google Images.
 
 # Running
 
@@ -13,7 +15,6 @@ Configure variables in `scrape.js`:
 `npm run scrape`
 
 ## Resizing
-
 
 **Note:** You need [imagemagick](https://imagemagick.org/script/download.php) installed for resizing!
 
